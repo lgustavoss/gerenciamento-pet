@@ -23,6 +23,7 @@ Listagem de Pet
                             <b>Cor</b> <a class="pull-right">{{pet.get_cor_display}}</a>
                         </li>
                     </ul>
+                    {% if user.cargo == 1 %}
                     <br>
                     <div class="row">
                         <div class="col-md-12">
@@ -31,6 +32,7 @@ Listagem de Pet
                             </a>
                         </div>
                     </div>
+                    {% endif %}
                 </div>
             </div>
         </div>
