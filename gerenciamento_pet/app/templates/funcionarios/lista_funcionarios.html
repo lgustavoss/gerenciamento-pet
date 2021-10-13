@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block title %}
-Listagem de clientes
+Listagem de Funcionarios
 {% endblock title %}
 
 {% block content %}
@@ -14,6 +14,7 @@ Listagem de clientes
             <thead>
             <tr>
                 <th>Nome</th>
+                <th>Usuario</th>
                 <th>Data de Nascimento</th>
                 <th>Cargo</th>
             </tr>
@@ -22,6 +23,7 @@ Listagem de clientes
             {% for i in funcionarios %}
             <tr>
                 <td>{{i.nome}}</td>
+                <td>{{i.username}}</td>
                 <td>{{i.nascimento}}</td>
                 <td>{{i.get_cargo_display}}</td>
             </tr>
