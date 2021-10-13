@@ -1,0 +1,5 @@
+Requerimentos necessários
+
+django 3.2.8
+django-adminlte2 0.4.3
+mysqlclient 2.0.3
